@@ -1,0 +1,42 @@
+.guests__content {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 0;
+
+
+    .guests__h1 {
+        font-family: "GreatVibes-Regular";
+        font-size: 40px;
+        color: #FFFAF3;
+        font-weight: 100;
+    }
+
+    .guests__text {
+        position: relative;
+        font-family: "PlayfairDisplay-Medium";
+        color: #FFFAF3;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 28px;
+        text-transform: uppercase;
+
+        &:last-child::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: -50%;
+            height: 3px;
+            background-color: #FFFAF3;
+        }
+
+        &:last-child {
+            margin-top: 50px;
+            font-family: "PlayfairDisplay-Semibold";
+            font-size: 24px;
+            text-transform: lowercase;
+        }
+    }
+}

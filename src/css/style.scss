@@ -1,0 +1,47 @@
+@import "./stylesheet.scss";
+@import "./MainComponent.scss";
+@import "./DearGuestsComponent.scss";
+@import "./WeddingPlaceComponent.scss";
+@import "./DayProgramComponent.scss";
+@import "./DressCodeComponent.scss";
+
+
+$even_section-background: #FFF3DF;
+$odd_section-background: #BD9E6C;
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 380px;
+  border: 1px red solid;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.startSection {
+  background-color: $even_section-background;
+  overflow: hidden;
+  height: 49em;
+}
+
+.guestsSection {
+  background-color: $odd_section-background;
+}
+
+.weddingPlaceSection {
+  background-color: $even_section-background;
+}
+
+.dayProgramSection {
+  background-color: $odd_section-background;
+}
+
+.dressCodeSection {
+  background-color: $even_section-background;
+  overflow: hidden;
+}
